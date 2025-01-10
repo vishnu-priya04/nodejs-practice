@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>hello world</h1>
+    </body>
+    <script>
+        const url ="https://bug-free-palm-tree-5grxq65gvvgwc4jv9-3333.app.github.dev"
+        fetch(url,{
+            method:"POST",
+            body:JSON.stringify({
+             name: "harish",
+             age:22, rollno:354354
+             }),
+            header: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((response) => {
+            console.log(response)
+        })
+    </script>
+</html>
